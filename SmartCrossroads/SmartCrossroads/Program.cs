@@ -1,4 +1,5 @@
 ﻿using System;
+using SmartCrossroadsClassLibrary;
 
 namespace SmartCrossroads
 {
@@ -6,7 +7,10 @@ namespace SmartCrossroads
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CalculatatorForLights calculatatorForLights = 
+                new CalculatatorForLights();
+            float generealTime = calculatatorForLights.CalculateGeneralTimeForAllLights();
+            Console.WriteLine($"General Time -- {generealTime}");
         }
     }
 }
